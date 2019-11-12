@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+<!--
+var arr= new Array(10);
+for(i=0; i<10; i++)
+arr[i]=prompt("enter a no.");
+for(i=0; i<arr.length; i++)
+for(j=0; j<arr.length-i-1; j++)
+{
+if (arr[j]>arr[j+1])
+{t=arr[j];
+arr[j]=arr[j+1];
+arr[j+1]=t;
+}}
+for(i=0; i<10; i++)
+document.write(arr[i]+"<br>");
+-->
+</script>
+</body>
+</html>

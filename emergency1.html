@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: blue;
+    padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>EMERGENCY FORM</h3>
+
+<div class="container">
+  
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Address</label>
+    <input type="text" id="lname" name="Address" placeholder=" your Address..">
+
+    <label for="lname">Phone Number </label>
+    <input type="text" id="lname" name="lastname" placeholder="Type your phone number here..">
+
+    <label for="country">Blood group</label>
+    <select id="country" name="country">
+      <option value="australia">A+</option>
+      <option value="canada">B+</option>
+      <option value="usa">AB-</option>
+      <option value="usa">AB+</option>
+      <option value="usa">A-</option>
+      <option value="usa">B-</option>
+      <option value="usa">O+</option>
+      <option value="usa">O-</option>
+    </select>
+
+    <label for="subject">Tell us about your emergency</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+   
+
+<button onclick="myFunction()">SUBMIT</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "we will contact you shortly thanks for contacting us";
+}
+</script> 
+   
+  </form>
+</div>
+
+</body>
+</html>

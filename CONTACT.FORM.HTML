@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+background: url('blooddonar3.jpg') no-repeat;
+background-size: cover;
+font-family: Arial, Helvetica, sans-serif;}
+
+input[type=text], select, textarea {
+    width: 60%;
+    padding: 12px;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 150px;
+    
+
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+	top:90%;
+	left:50%;
+	position:absolute;
+	transform:translate(-50%, 0%);
+    border-radius: 4px;
+    cursor: pointer;
+}
+label
+{
+  margin-left: 150px;  
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    padding: 25px;
+opacity: .9;
+}
+</style>
+</head>
+<body>
+
+<h3>Book Your Table</h3>
+<div class="container">
+  <form>
+    <br><label for="fname">Name : </label><br>
+    <input type="text" id="fname" name="firstname"><br>
+    <label for="phone">Phone : </label><br>
+    <input type="text" id="phone" name="phone"><br>
+    <label for="Email">Email : </label><br>
+    <input type="text" id="Email" name="Email"><br>
+    <label for="booking">Booking Date : </label><br>
+    <input type="text" id="booking" name="book"><br>
+    <label for="time">Booking Time : </label><br>
+    <input type="text" id="time" name="booking time" placeholder="11:15 AM"><br>
+    <label for="subject">Message</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>

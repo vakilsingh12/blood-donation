@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<form name="tmp" method="POST" action="<?php echo$_SERVER["PHP_SELF"];?>">
+
+temperature:
+<input type="text" name="z">
+convert in:
+<select name="x">
+<option></option><option>
+</option>
+
+
+</FORM>
+<?php
+function con($a, $b)
+{
+if($b=="Fahrenheit")
+{
+return(((9/5)*$a)+(32));
+}
+elseif($b=="Celsius")
+{
+return(($a-32)*(5/9));
+}
+if (isset($_post["abc"]))
+{
+$b1=$_POST
+?>
+
+</body>
+</html>

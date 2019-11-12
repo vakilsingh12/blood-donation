@@ -1,0 +1,53 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 100%;
+
+}
+
+
+
+.overlay {
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: orange;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+opacity: .6;
+
+}
+
+.container:hover .overlay {
+  width: 50%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+      <div class="fakeimg" style="height:200px; width:800px";><img src="hand.jpg" style="width: 800px; height: 230px";></div>
+  <div class="overlay">
+    <div class="text">Hello World</div>
+  </div>
+</div>
+
+

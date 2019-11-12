@@ -1,0 +1,43 @@
+.title{
+font-family: sans-serif;
+color: #dc2d5e;
+}
+.container{
+position: relative;
+width: 900px;
+height: 500px;
+display: inline-block;
+}
+.image{
+display: block;
+width: 900px;
+height: 500px;
+}
+.overlay{
+position: absolute;
+transition: all .5s ease;
+opacity: 0;
+background-color: red;
+}
+.container:hover .overlay{
+opacity: .7;
+}
+.text{
+color: black;
+font-family: sans-serif;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+font-size: 80px;
+}
+.overlayleft{
+height: 500%;
+width: 900;
+top: 0;
+left: 0;
+background-color: #00b1ba;
+}
+.container:hover .overlayleft{
+width: 100%;
+}

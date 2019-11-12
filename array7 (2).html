@@ -1,0 +1,31 @@
+<html>
+<head>
+<script type="text/javascript">
+<!--
+function search(cname)
+{
+var country= new Array("china","pakistan","india","afgnistan","japan","bangladesh","unitedkingdom","USA","russia","nepal")
+var s=0;
+var capital= new Array("brijing","islmabad","newdelhi","kabul","tokyo","dhaka","london","washingtonDC","moscow","kathmandu")
+
+for(i=0; i<country.length; i++)
+{
+if (country[i]==cname)
+{document.write(capital[i]+"<br>");
+s=1; break;
+}}
+if (s==0)
+document.write("input invalid");
+}
+-->
+</script>
+</head>
+<body>
+<script type="text/javascript">
+<!--
+c=prompt("enter  country");
+search(c);
+-->
+</script>
+</body>
+</html>

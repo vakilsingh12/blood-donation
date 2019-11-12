@@ -1,0 +1,20 @@
+<html>
+<head>
+<SCRIPT TYPE="TEXT/JAVASCRIPT">
+FUNCTION CALC()
+{
+a=document.frm1.q.value;
+b=document.frm1.r.value;
+c=document.frm1.p.value=parseFloat(a)*parseFloat(b);
+}
+</script>
+</head>
+<body>
+<form name=frm1 method=post>
+enter quantity<input type=text name=q>
+enter rate<input type=text name=r>
+payable amount<input type=text name=p><br>
+<input type=button value="calculate" on click="calc()";
+</form>
+</body>
+</html>
